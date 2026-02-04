@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    gap: 20px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main img{
+    width: 500px;
+    height: 500px;
+}
+
+.main about_food{
+    font-size: 18px;
+    color: #1C1C1C;
+    line-height: 1.6;
+    margin-left: 70px;
+}
+
+.main h2{
+    font-size: 36px;
+    color: #1C1C1C;
+    text-align: left;
+}
+
+.page-header {
+    background-color:#b1ea75;
+    display: flex;
+}
+
+.page-header img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 100px;
+    border: 2px solid #1C1C1C;
+    
+}
+
+.new {
+    background-color:#2063c8;
+    display: flex;
+}
