@@ -40,7 +40,9 @@
           vegetables and seaweed. It is often served with soy sauce, wasabi, and
           pickled ginger.
         </p>
-        <button>Add to cart</button>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
       </article>
       <article class="card">
         <h3>Ramen Noodles</h3>
@@ -51,7 +53,9 @@
           with soy sauce or miso, and uses toppings such as sliced pork, nori
           (dried sea weed), menma (bamboo shoots), and scallions.
         </p>
-        <button>Add to cart</button>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
       </article>
       <article class="card">
         <h3>Japanese Soba Noodles</h3>
@@ -62,7 +66,9 @@
           hot broth. It is often garnished with green onions, tempura, or
           seaweed. pickled ginger.
         </p>
-        <button>Add to cart</button>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
       </article>
       <article class="card">
         <h3>Salmon Sushi</h3>
@@ -73,7 +79,9 @@
           vegetables and seaweed. It is often served with soy sauce, wasabi, and
           pickled ginger.
         </p>
-        <button>Add to cart</button>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
       </article>
       <article class="card">
         <h3>Sushi Platter</h3>
@@ -84,11 +92,28 @@
           vegetables and seaweed. It is often served with soy sauce, wasabi, and
           pickled ginger.
         </p>
-        <button>Add to cart</button>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
       </article>
     </section>
+    <div class="user-cart">
+      <button class="cart-btn-new" onclick="openCart()">
+        Click to View your Cart 🛒
+      </button>
+    </div>
+
+    <div class="overlay" id="cartOverlay">
+      <div class="cart">
+        <button class="close" aria-label="Close cart">×</button>
+        <h2>Your Cart</h2>
+        <p>No items yet</p>
+      </div>
+    </div>
     <footer class="page-footer">
       <p>&copy; 2026 Sushi World. All rights reserved.</p>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
