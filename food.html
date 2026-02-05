@@ -97,17 +97,24 @@
         </button>
       </article>
     </section>
-    <div class="user-cart">
-      <button class="cart-btn-new" onclick="openCart()">
+    <div>
+      <button
+        class="cart-btn-new"
+        onclick="
+          openCart();
+          itemsInCart();
+        "
+      >
         Click to View your Cart 🛒
       </button>
     </div>
-
     <div class="overlay" id="cartOverlay">
       <div class="cart">
-        <button class="close" aria-label="Close cart">×</button>
+        <button class="close" onclick="closeCart()">×</button>
         <h2>Your Cart</h2>
-        <p>No items yet</p>
+        <ul id="cartItems"></ul>
+        <p id="items">No items yet</p>
+        <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
       </div>
     </div>
     <footer class="page-footer">
