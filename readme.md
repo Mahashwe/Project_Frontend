@@ -28,4 +28,4 @@ A modern, interactive restaurant website featuring menu browsing, favorites, car
 ## 💻 Technologies
 
 Pure HTML, CSS, and JavaScript - no frameworks needed.
-**Sushi World** © 2026
+Learning front end - Proof of concept project for learing frontend 
