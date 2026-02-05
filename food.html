@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Menu</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="styles.css" />
+    <header class="page-header">
+      <div class="new">
+        <img src="images/logo.png" alt="logo" />
+        <h1 class="title">Sushi World</h1>
+      </div>
+      <div class="links">
+        <a href="index.html" class="home-link">Home Page</a>
+        <a href="reservations.html" class="reservation-link">Reservations</a>
+      </div>
+    </header>
+    <h2 class="food-title">Our Delicious Menu</h2>
+    <h3 class="food-title-a">This Week's Special</h3>
+    <section class="food-menu">
+      <ul>
+        <li>Sushi Platter - $12.99</li>
+        <li>Sashimi Platter - $18.99</li>
+        <li>Tempura - $10.99</li>
+        <li>Miso Soup - $4.99</li>
+        <li>Edamame - $5.99</li>
+      </ul>
+      <img src="images/h.jpg" alt="Delicious Sushi" />
+    </section>
+    <h2>Know your Food</h2>
+    <section class="menu">
+      <article class="card">
+        <h3>Regular Sushi</h3>
+        <img src="images/c.jpg" alt="Sushi Image" />
+        <p>
+          Sushi is a traditional Japanese dish that typically consists of
+          vinegared rice, raw fish, and various other ingredients such as
+          vegetables and seaweed. It is often served with soy sauce, wasabi, and
+          pickled ginger.
+        </p>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
+      </article>
+      <article class="card">
+        <h3>Ramen Noodles</h3>
+        <img src="images/d.jpg" alt="Ramen Image" />
+        <p>
+          Ramen is a Japanese noodle soup dish that consists of Chinese-style
+          wheat noodles served in a meat or fish-based broth, often flavored
+          with soy sauce or miso, and uses toppings such as sliced pork, nori
+          (dried sea weed), menma (bamboo shoots), and scallions.
+        </p>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
+      </article>
+      <article class="card">
+        <h3>Japanese Soba Noodles</h3>
+        <img src="images/f.jpg" alt="Soba Image" />
+        <p>
+          Soba is a traditional Japanese dish that typically consists of
+          buckwheat noodles, served either chilled with a dipping sauce or in a
+          hot broth. It is often garnished with green onions, tempura, or
+          seaweed. pickled ginger.
+        </p>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
+      </article>
+      <article class="card">
+        <h3>Salmon Sushi</h3>
+        <img src="images/e.jpg" alt="Sushi Image" />
+        <p>
+          Sushi is a traditional Japanese dish that typically consists of
+          vinegared rice, raw fish, and various other ingredients such as
+          vegetables and seaweed. It is often served with soy sauce, wasabi, and
+          pickled ginger.
+        </p>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
+      </article>
+      <article class="card">
+        <h3>Sushi Platter</h3>
+        <img src="images/g.jpg" alt="Sushi Image" />
+        <p>
+          Sushi is a traditional Japanese dish that typically consists of
+          vinegared rice, raw fish, and various other ingredients such as
+          vegetables and seaweed. It is often served with soy sauce, wasabi, and
+          pickled ginger.
+        </p>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
+      </article>
+      <article class="card">
+        <h3>Chilli Oil Noodles</h3>
+        <img src="images/h.jpg" alt="Chilli Oil Noodles Image" />
+        <p>
+          Chilli oil noodles are a spicy and flavorful dish made with noodles
+          tossed in a sauce made from chili oil, soy sauce, garlic, and other
+          seasonings. They can be served hot or cold and are often garnished
+          with green onions, sesame seeds, and cilantro.
+        </p>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
+      </article>
+      <article class="card">
+        <h3>Sushi</h3>
+        <img src="images/b.jpg" alt="Sushi Image" />
+        <p>
+          Sushi is a traditional Japanese dish that typically consists of
+          vinegared rice, raw fish, and various other ingredients such as
+          vegetables and seaweed. It is often served with soy sauce, wasabi, and
+          pickled ginger.
+        </p>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
+      </article>
+      <article class="card">
+        <h3>Noodles</h3>
+        <img src="images/f.jpg" alt="Noodles Image" />
+        <p>
+          Noodles are a traditional Japanese dish that typically consists of
+          vinegared rice, raw fish, and various other ingredients such as
+          vegetables and seaweed. It is often served with soy sauce, wasabi, and
+          pickled ginger.
+        </p>
+        <button class="cart-btn" onclick="add_to_cart(event)">
+          Add to cart
+        </button>
+      </article>
+    </section>
+    <div>
+      <button
+        class="cart-btn-new"
+        onclick="
+          openCart();
+          itemsInCart();
+        "
+      >
+        Click to View your Cart 🛒
+      </button>
+    </div>
+    <div class="overlay" id="cartOverlay">
+      <div class="cart">
+        <button class="close" onclick="closeCart()">×</button>
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <p id="items">No items yet</p>
+        <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <p>&copy; 2026 Sushi World. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
