@@ -118,7 +118,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: rgb(246, 121, 113);
+    background-color:rgb(218, 177, 90);
 }
 
 .food-menu li {
@@ -185,7 +185,7 @@ body {
 
 
 .cart-btn-new{
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 1%;
     background-color: #148909;
     color: white;
@@ -265,4 +265,28 @@ body {
 
 .resv-info{
     margin-left: 25%;
+    background-color: rgb(218, 177, 90);
+    margin-right: 25%;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+}
+
+#name{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#time{
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
 }

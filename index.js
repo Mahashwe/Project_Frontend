@@ -50,3 +50,35 @@ function clearCart(){
     document.getElementById("items").style.display = "block";
     document.getElementById("items").innerText = "No items yet";
 }
+
+let reservations = [];
+
+function timeToMinutes(time) {
+  const [h, m] = time.split(":");
+  return Number(h) * 60 + Number(m);
+}
+
+function slot(){
+    const a = document.getElementById("name").value;
+    const b = document.getElementById("time").value;
+
+    const newMinutes = timeToMinutes(b);
+    let alreadyBooked = false;
+
+    for (let i = 0; i < reservations.length; i++) {
+    const oldMinutes = timeToMinutes(reservations[i].time);
+
+    if (newMinutes >= oldMinutes && newMinutes < oldMinutes + 60) {
+      alreadyBooked = true;
+      break;
+    }
+  }
+
+    if (alreadyBooked) {
+        alert("This slot is already booked. Please choose another slot.");
+    } else {
+        reservations.push({name: a, time: b});
+        alert("Reservation confirmed for " + a + " at " + b);
+        console.log(reservations);
+    }
+}
