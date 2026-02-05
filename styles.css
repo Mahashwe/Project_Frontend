@@ -32,7 +32,7 @@ body {
 }
 
 .page-header {
-    background-color:#b1ea75;
+    background-color:lightgreen;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,9 +46,8 @@ body {
     border: 2px solid #1C1C1C;
     
 }
-
 .new {
-    background-color:#2063c8;
+    background-color:lightgreen;
     display: flex;
     border-radius: 5px;
 }
@@ -118,8 +117,8 @@ body {
 .food-menu {
     display: flex;
     align-items: center;
-    gap: 10px;
-    background-color: rgb(229, 51, 38);
+    gap: 20px;
+    background-color: rgb(246, 121, 113);
 }
 
 .food-menu li {
@@ -128,6 +127,8 @@ body {
     color: #1C1C1C;
     font-style: italic;
     flex: 1;
+    font-weight: bold;
+    list-style: decimal;
 }
 
 .food-menu img {
@@ -151,7 +152,7 @@ body {
 }
 
 .card {
-  width: 400px;
+  width: 500px;
   border-radius: 12px;
   overflow: hidden;
   background: white;
@@ -251,4 +252,17 @@ body {
 
 .cart .close:hover {
   color: #000;
+}
+
+.reserv-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-position: center 80%;
+}
+
+.resv-info{
+    margin-left: 25%;
 }
